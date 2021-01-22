@@ -10,7 +10,20 @@ body {
 	position: relative;
 }
 
+ .navbar-inverse .navbar-nav>li>a, .nav li a, .search-icon, .sec-1-head, .sec-1-area,
+.seller-head, .seller-p, .dish-title, .dish-p, .stats-head, .stats-p, .circle, .btn-order-now, .sec-3-p, .sec-3-quote, footer, .subscribe-btn
+ {
+	color: #fff;
+}
 
+.seller-area, .dishes, .seller-area, .circle, .sec-3-quote, .sec-3, .subscribe-area, .subscribe-form, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	text-align: center;
+}
+
+.navbar-inverse, .bg-seller, .bg-tasty, .bg-stats, .new-image-parent, .delicious-img, .sec-3, .image-parent,
+ .footer-img-parent, .subscribe-input,.subscribe-btn, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	width: 100%;
+}
 /* Header-code */
 
 .nav {
@@ -22,14 +35,12 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
 	z-index: 9;
 	border: 0;
 	padding: 0.5em 0em 2em 0em;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #ffffff;
 	font-weight: bolder;
 }
 
@@ -38,17 +49,16 @@ body {
 	border-color: rgba(255, 255, 255, 0.19);
 }
 
+
 .navbar-inverse .navbar-toggle {
 	border-color: #fff;
 }
-
 .navbar-inverse .navbar-toggle:hover {
 	background-color: #3330;
 }
 
 
 .nav li a {
-	color: #ffffff;
 	text-transform: uppercase;
 	padding-right: 39px;
 	margin-top: 18px;
@@ -59,7 +69,6 @@ body {
 }
 
 .search-icon {
-	color: #ffffff;
 	font-size: 24px !important;
 	position: relative;
 	top: 1.3em;
@@ -86,7 +95,6 @@ body {
 
 .sec-1-head {
 	font-size: 54px;
-	color: #ffffff;
 	font-weight: 600;
 	margin-bottom: 18px;
 }
@@ -96,7 +104,6 @@ body {
 }
 
 .sec-1-area {
-	color: #ffffff;
 	font-size: 16px;
 	max-width: 450px;
 	margin-bottom: 24px;
@@ -126,7 +133,6 @@ transform: scale(1.1);
 /* Best Seller */
 
 .bg-seller {
-	width: 100%;
     height: auto;
     background: url(./img/best-seller-bg.png) no-repeat;
     background-size: contain;
@@ -135,7 +141,6 @@ transform: scale(1.1);
 }
 
 .seller-head{
-    color: #fff;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -143,7 +148,6 @@ transform: scale(1.1);
 }
 
 .seller-p{
-	color: #fff;
     font-size: 19px;
 	max-width: 650px;
 	margin: 0 auto;
@@ -158,7 +162,6 @@ transform: scale(1.1);
 }
 
 .seller-area{
-	text-align: center;
 	position: relative;
 	bottom: 10em;
 }
@@ -166,7 +169,6 @@ transform: scale(1.1);
 	display: flex;
     flex-wrap: wrap;
 	justify-content: center;
-	text-align: center;
 }
 
 .dish{
@@ -174,21 +176,18 @@ transform: scale(1.1);
 }
 
 .dish-title{
-	color: #fff;
 	font-weight: 600;
 	margin-bottom: 18px;
 }
 
 .dish-p{
 	max-width: 198px;
-	color: #fff;
 }
 
 
 /* tasty */
 
 .bg-tasty {
-	width: 100%;
 	height: 450px;
 	background: url(./img/tasty-plain-bg-sushi.png) no-repeat;
 	background-size: contain;
@@ -206,7 +205,6 @@ transform: scale(1.1);
 /* stats */
 
 .bg-stats {
-	width: 100%;
 	height: auto;
 	background: url(./img/stats-bg.png) no-repeat;
 	background-size: contain;
@@ -214,12 +212,7 @@ transform: scale(1.1);
 	padding-bottom: 7em;
 }
 
-.stats-area{
-	text-align: center;
-}
-
 .stats-head {
-    color: #ffffff;
     font-size: 58px;
     font-weight: bolder;
     margin-top: 1.7em;
@@ -234,7 +227,6 @@ transform: scale(1.1);
 	margin-top: 4em;
 }
 .stats-p {
-    color: #ffffff;
     font-size: 24px;
     margin-top: 1.7em;
     margin-bottom: 1.9em;
@@ -248,21 +240,18 @@ transform: scale(1.1);
 	position: relative;
 	/* top: -15px; */
 	height: 100%;
-	width: 100%;
 	object-fit: cover;
 }
 
 .circle {
 	width: 218px;
     height: 221px;
-    color: #fff;
     background-color: #ff7f7f;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50%;
     padding: 2em;
     border: 3px solid #fff;
-    text-align: center;
     margin-right: 5em;
 }
 
@@ -292,7 +281,6 @@ transform: scale(1.1);
 }
 
 .delicious-img {
-	width: 100%;
 	object-fit: cover;
 	position: relative;
 }
@@ -324,7 +312,6 @@ transform: scale(1.1);
 	border-radius: 24px;
 	border: 0px;
 	background-color: #ff7f7f;
-	color: #fff;
 	font-weight: bolder;
 	transition: all .2s ease-in-out;
 }
@@ -339,9 +326,7 @@ transform: scale(1.1);
 	background-image: url(./img/phoebie-bg.png);
 	height: 650px;
 	background-size: cover;
-	width: 100%;
 	box-shadow: inset 0 0 0 1000px rgba(143, 20, 20, 0.67);
-	text-align: center;
 }
 
 .sec-3-img {
@@ -355,13 +340,7 @@ transform: scale(1.1);
 	transform: scale(1.2 );
 }
 
-.sec-3-quote {
-	text-align: center;
-	color: #ffffff;
-}
-
 .sec-3-p {
-	color: #ffffff;
 	max-width: 750px;
 	margin: 0 auto;
 	margin-top: 1.9em;
@@ -386,11 +365,6 @@ transform: scale(1.1);
     background-size: contain;
     background-position: top;
     padding: 5% 0 0;
-}
-
-
-.subscribe-area {
-	text-align: center;
 }
 
 .subscribe-p {
@@ -429,7 +403,6 @@ transform: scale(1.1);
 .subscribe-btn {
 	position: relative;
 	right: 31px;
-	color: #ffffff;
 	border-radius: 100px;
 	border: 0px;
 	padding: 7px 42px 7px 42px;
@@ -441,10 +414,6 @@ transform: scale(1.1);
 
 
 /* Footer */
-
-footer {
-	color: #ffffff;
-}
 
 .footer-p {
 	max-width: 360px;
@@ -468,7 +437,6 @@ footer ul li {
 }
 
 .image-parent {
-	width: 100%;
 	position: relative;
 	z-index: 1;
 }
@@ -478,7 +446,6 @@ footer ul li {
 	position: relative;
 	/* top: -15px; */
 	height: 100%;
-	width: 100%;
 	object-fit: cover;
 }
 
@@ -584,14 +551,12 @@ footer ul li {
 
 	.subscribe-input,.subscribe-btn{
 		min-width: 0;
-		width: 100%;
 		margin: 10px auto;
 	}
 
 	.subscribe-form{
 		flex-direction: column;
 		align-items: center;
-		text-align: center; 
 	}
 	.subscribe-btn{
 		right: 0;
@@ -610,10 +575,8 @@ footer ul li {
 		/* menu box */
 		    border-color: rgba(255, 255, 255, 0.19);
     background: rgb(255,127,127, 0.9);
-    text-align: center;
     top: 0;
     position: absolute;
-    width: 100%;
     height: 100vh;
 	}
 	.toggle-adjustment{
