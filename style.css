@@ -10,6 +10,8 @@ body {
 	position: relative;
 }
 
+/* Common 	CSS */
+
  .navbar-inverse .navbar-nav>li>a, .nav li a, .search-icon, .sec-1-head, .sec-1-area,
 .seller-head, .seller-p, .dish-title, .dish-p, .stats-head, .stats-p, .circle, .btn-order-now, .sec-3-p, .sec-3-quote, footer, .subscribe-btn
  {
@@ -426,6 +428,13 @@ footer ul li {
 	padding-left: 0;
 	text-align: left;
 	cursor: pointer;
+	padding-bottom: 6px;
+	color: #f9f9f9a3;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
 .footer {
@@ -546,20 +555,23 @@ footer ul li {
 	}
 	.sec-1 {
 		left: 0;
-		/* padding-left: 5em; */
 	}
 
 	.subscribe-input,.subscribe-btn{
 		min-width: 0;
 		margin: 10px auto;
+		font-size: 21px;
 	}
 
 	.subscribe-form{
 		flex-direction: column;
 		align-items: center;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.subscribe-btn{
 		right: 0;
+		width:72%;
 	}
 	.tasty-area{
 		right: 0;
@@ -569,11 +581,7 @@ footer ul li {
 		padding-left: 18px;
 	}
 	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-		/* border-color: rgba(255, 255, 255, 0.19);
-		background: rgb(255, 127, 127); */
-
-		/* menu box */
-		    border-color: rgba(255, 255, 255, 0.19);
+	border-color: rgba(255, 255, 255, 0.19);
     background: rgb(255,127,127, 0.9);
     top: 0;
     position: absolute;
