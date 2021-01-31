@@ -18,7 +18,7 @@ body {
 	color: #fff;
 }
 
-.seller-area, .dishes, .seller-area, .circle, .sec-3-quote, .sec-3, .subscribe-area, .subscribe-form, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+.seller-area, .dishes, .seller-area, .bg-stats, .circle, .sec-3-quote, .sec-3, .subscribe-area, .subscribe-form, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
 	text-align: center;
 }
 
@@ -26,6 +26,16 @@ body {
  .footer-img-parent, .subscribe-input,.subscribe-btn, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
 	width: 100%;
 }
+
+.navbar-inverse, .section-1, .bg-seller, .bg-stats, .circle, .btn-order-now, .subscribe-btn{
+	background-color: #ff7f7f;
+}
+
+.btn-order, .delicious-head, .delicious-p, .subscribe-p, .subscribe-head{
+	color: #ff7f7f;
+}
+
+
 /* Header-code */
 
 .nav {
@@ -33,7 +43,6 @@ body {
 }
 
 .navbar-inverse {
-	background-color: #ff7f7f96;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -70,6 +79,25 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.nav li a::after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+	margin: 0 auto;
+}
+
+.nav li a:hover::after{
+	width: 70%; 
+  left: 5%; 
+}
+
 .search-icon {
 	font-size: 24px !important;
 	position: relative;
@@ -85,14 +113,11 @@ body {
 	background-image: url(./img/bg-section-1.png);
 	background-size: cover;
 	background-position: center bottom;
-	background-color: #ff7f7f;
 }
 
 .sec-1 {
 	position: relative;
 	top: 15em;
-	/* left: 7em; */
-	/* margin-right: 98px; */
 }
 
 .sec-1-head {
@@ -121,7 +146,6 @@ body {
 	padding: 13px 5em;
 	border-radius: 24px;
 	border: 0px;
-	color: #ff7f7f;
 	font-weight: bolder;
 	transition: all .2s ease-in-out;
 }
@@ -138,7 +162,6 @@ transform: scale(1.1);
     height: auto;
     background: url(./img/best-seller-bg.png) no-repeat;
     background-size: contain;
-    background-color: #ff7f7f;
     padding-bottom: 2em;
 }
 
@@ -210,7 +233,6 @@ transform: scale(1.1);
 	height: auto;
 	background: url(./img/stats-bg.png) no-repeat;
 	background-size: contain;
-	background-color: #ff7f7f;
 	padding-bottom: 7em;
 }
 
@@ -248,7 +270,6 @@ transform: scale(1.1);
 .circle {
 	width: 218px;
     height: 221px;
-    background-color: #ff7f7f;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50%;
@@ -294,14 +315,12 @@ transform: scale(1.1);
 }
 
 .delicious-head {
-	color: #ff7f7f;
 	font-size: 58px;
 	font-weight: bolder;
 	margin-top: 1em;
 }
 
 .delicious-p {
-	color: #ff7f7f;
 	font-size: 30px;
 	margin-top: 1.7em;
 	margin-bottom: 1.9em;
@@ -313,7 +332,6 @@ transform: scale(1.1);
 	padding: 13px 5em;
 	border-radius: 24px;
 	border: 0px;
-	background-color: #ff7f7f;
 	font-weight: bolder;
 	transition: all .2s ease-in-out;
 }
@@ -372,14 +390,12 @@ transform: scale(1.1);
 .subscribe-p {
 	max-width: 950px;
 	margin: 0 auto;
-	color: #ff7f7f;
 	font-size: 30px;
 	margin-bottom: 2.4em;
 }
 
 .subscribe-head {
 	font-size: 58px;
-	color: #ff7f7f;
 	margin-top: 2em;
 	font-weight: 600;
 	margin-bottom: 1em;
@@ -408,7 +424,6 @@ transform: scale(1.1);
 	border-radius: 100px;
 	border: 0px;
 	padding: 7px 42px 7px 42px;
-	background-color: #ff7f7f;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 21px;
